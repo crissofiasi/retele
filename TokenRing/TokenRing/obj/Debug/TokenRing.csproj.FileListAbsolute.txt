@@ -1,0 +1,15 @@
+C:\Users\criss\source\repos\TokenRing\TokenRing\bin\Debug\TokenRing.exe.config
+C:\Users\criss\source\repos\TokenRing\TokenRing\bin\Debug\TokenRing.exe
+C:\Users\criss\source\repos\TokenRing\TokenRing\bin\Debug\TokenRing.pdb
+C:\Users\criss\source\repos\TokenRing\TokenRing\obj\Debug\TokenRing.csprojAssemblyReference.cache
+C:\Users\criss\source\repos\TokenRing\TokenRing\obj\Debug\MainWindow.g.cs
+C:\Users\criss\source\repos\TokenRing\TokenRing\obj\Debug\App.g.cs
+C:\Users\criss\source\repos\TokenRing\TokenRing\obj\Debug\TokenRing_MarkupCompile.cache
+C:\Users\criss\source\repos\TokenRing\TokenRing\obj\Debug\TokenRing_MarkupCompile.lref
+C:\Users\criss\source\repos\TokenRing\TokenRing\obj\Debug\MainWindow.baml
+C:\Users\criss\source\repos\TokenRing\TokenRing\obj\Debug\TokenRing.g.resources
+C:\Users\criss\source\repos\TokenRing\TokenRing\obj\Debug\TokenRing.Properties.Resources.resources
+C:\Users\criss\source\repos\TokenRing\TokenRing\obj\Debug\TokenRing.csproj.GenerateResource.cache
+C:\Users\criss\source\repos\TokenRing\TokenRing\obj\Debug\TokenRing.csproj.CoreCompileInputs.cache
+C:\Users\criss\source\repos\TokenRing\TokenRing\obj\Debug\TokenRing.exe
+C:\Users\criss\source\repos\TokenRing\TokenRing\obj\Debug\TokenRing.pdb

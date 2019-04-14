@@ -1,0 +1,50 @@
+﻿<Window x:Name="MainWindow1" x:Class="TokenRing.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TokenRing"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="900" Loaded="MainWindow1_Loaded">
+    <Grid x:Name="mainGrid">
+        <WrapPanel x:Name="WpCalc2" HorizontalAlignment="Left" Height="250" Margin="272,6,0,0" VerticalAlignment="Top" Width="250" Background="#FFEAE3E3">
+            <Label Content="Calcuator 2" Height="32" Width="247" RenderTransformOrigin="0.5,0.5">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0.624"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
+            <TextBlock x:Name="tblCalc2" Height="187" TextWrapping="Wrap" Text="TextBlock" Width="249"/>
+            <TextBox Height="29" TextWrapping="Wrap" Text="TextBox" Width="249"/>
+        </WrapPanel>
+        <WrapPanel x:Name="WpCalc1" HorizontalAlignment="Left" Height="250" Margin="10,6,0,0" VerticalAlignment="Top" Width="250" Background="#FFEAE3E3">
+            <Label Content="Calculator 1" Height="32" Width="251"/>
+            <TextBlock x:Name="tblCalc1" Height="187" TextWrapping="Wrap" Text="TextBlock" Width="249"/>
+            <TextBox Height="29" TextWrapping="Wrap" Text="TextBox" Width="249"/>
+        </WrapPanel>
+        <WrapPanel x:Name="WpCalc3" HorizontalAlignment="Left" Height="250" Margin="10,268,0,0" VerticalAlignment="Top" Width="250" Background="#FFEAE3E3">
+            <Label Content="Calcuator 3" Height="32" Width="249"/>
+            <TextBlock x:Name="tblCalc3" Height="187" TextWrapping="Wrap" Text="TextBlock" Width="250"/>
+            <TextBox Height="29" TextWrapping="Wrap" Text="TextBox" Width="245"/>
+        </WrapPanel>
+        <WrapPanel x:Name="WpCalc4" HorizontalAlignment="Left" Height="250" Margin="273,268,0,0" VerticalAlignment="Top" Width="250" Background="#FFEAE3E3">
+            <Label Content="Calcuator 4" Height="32" Width="250"/>
+            <TextBlock x:Name="tblCalc4" Height="187" TextWrapping="Wrap" Text="TextBlock" Width="249"/>
+            <TextBox Height="29" TextWrapping="Wrap" Text="TextBox" Width="250"/>
+        </WrapPanel>
+        <TextBox x:Name="TxtSource" HorizontalAlignment="Left" Height="23" Margin="662,80,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TxtMsg" HorizontalAlignment="Left" Height="23" Margin="662,108,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TxtDestination" HorizontalAlignment="Left" Height="23" Margin="662,136,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Sursa" HorizontalAlignment="Left" Margin="619,80,0,0" VerticalAlignment="Top"/>
+        <Label Content="Mesaj" HorizontalAlignment="Left" Margin="616,111,0,0" VerticalAlignment="Top"/>
+        <Label Content="Destinatie" HorizontalAlignment="Left" Margin="595,136,0,0" VerticalAlignment="Top"/>
+        <Button Content="Next" HorizontalAlignment="Left" Height="23" Margin="662,173,0,0" VerticalAlignment="Top" Width="62" Click="Button_Click"/>
+        <Label Content="Token" HorizontalAlignment="Left" Height="27" Margin="582,299,0,0" VerticalAlignment="Top" Width="231"/>
+        <TextBlock x:Name="TblToken" HorizontalAlignment="Left" Height="135" Margin="582,331,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="231"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="167" Margin="582,299,0,0" Stroke="Black" VerticalAlignment="Top" Width="231" Panel.ZIndex="-100"/>
+    </Grid>
+</Window>
