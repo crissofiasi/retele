@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:TokenRing"
         mc:Ignorable="d"
         Title="MainWindow" Height="550" Width="900" Loaded="MainWindow1_Loaded">
-    <Grid x:Name="mainGrid">
+    <Grid x:Name="mainGrid" Margin="0,0,-0.4,-0.2">
         <WrapPanel x:Name="WpCalc2" HorizontalAlignment="Left" Height="250" Margin="272,6,0,0" VerticalAlignment="Top" Width="250" Background="#FFEAE3E3">
             <Label Content="Calcuator 2" Height="32" Width="247" RenderTransformOrigin="0.5,0.5">
                 <Label.RenderTransform>
@@ -43,8 +43,29 @@
         <Label Content="Mesaj" HorizontalAlignment="Left" Margin="616,111,0,0" VerticalAlignment="Top"/>
         <Label Content="Destinatie" HorizontalAlignment="Left" Margin="595,136,0,0" VerticalAlignment="Top"/>
         <Button Content="Next" HorizontalAlignment="Left" Height="23" Margin="662,173,0,0" VerticalAlignment="Top" Width="62" Click="Button_Click"/>
-        <Label Content="Token" HorizontalAlignment="Left" Height="27" Margin="582,299,0,0" VerticalAlignment="Top" Width="231"/>
-        <TextBlock x:Name="TblToken" HorizontalAlignment="Left" Height="135" Margin="582,331,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="231"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="167" Margin="582,299,0,0" Stroke="Black" VerticalAlignment="Top" Width="231" Panel.ZIndex="-100"/>
+        <StackPanel x:Name="spTokenRing" Margin="662,299,81,3" >
+            <StackPanel.DataContext>
+                <local:Token/>
+            </StackPanel.DataContext>
+            <Label Content="{Binding IsFree}" HorizontalAlignment="Left" Height="27"  VerticalAlignment="Top" Width="141"/>
+        <Label Content="{Binding Source}" HorizontalAlignment="Left" Height="27"  VerticalAlignment="Top" Width="151"/>
+        <Label Content="{Binding Destination}" HorizontalAlignment="Left" Height="27"  VerticalAlignment="Top" Width="151"/>
+        <Label Content="{Binding msg}" HorizontalAlignment="Left" Height="27"  VerticalAlignment="Top" Width="151"/>
+        <Label Content="{Binding response}" HorizontalAlignment="Left" Height="27"  VerticalAlignment="Top" Width="151"/>
+        <Label Content="{Binding CurrentCalculator}" HorizontalAlignment="Left" Height="27"  VerticalAlignment="Top" Width="151"/>
+        <Label Content="{Binding IsAnswer}" HorizontalAlignment="Left" Height="27"  VerticalAlignment="Top" Width="151"/>
+        </StackPanel>
+        <StackPanel  Margin="582,302,232,0" >
+            <Label Content="IsFree" HorizontalAlignment="Left" Height="27"  VerticalAlignment="Top" Width="70"/>
+            <Label Content="Source" HorizontalAlignment="Left" Height="27"  VerticalAlignment="Top" Width="151"/>
+            <Label Content="Destination" HorizontalAlignment="Left" Height="27"  VerticalAlignment="Top" Width="151"/>
+            <Label Content="Message" HorizontalAlignment="Left" Height="27"  VerticalAlignment="Top" Width="151"/>
+            <Label Content="Response" HorizontalAlignment="Left" Height="27"  VerticalAlignment="Top" Width="151"/>
+            <Label Content="Current" HorizontalAlignment="Left" Height="27"  VerticalAlignment="Top" Width="151"/>
+            <Label Content="IsAnswer" HorizontalAlignment="Left" Height="27"  VerticalAlignment="Top" Width="151"/>
+        </StackPanel>
+
+
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="195" Margin="582,299,0,0" Stroke="Black" VerticalAlignment="Top" Width="231" Panel.ZIndex="-100"/>
     </Grid>
 </Window>

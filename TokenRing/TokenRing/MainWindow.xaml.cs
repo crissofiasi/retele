@@ -24,6 +24,7 @@ namespace TokenRing
         public MainWindow()
         {
             InitializeComponent();
+            
            
         }
 
@@ -144,6 +145,7 @@ namespace TokenRing
             clearWindow();
             Tk = new Token();
             Tk.CurrentCalculator = 1;
+            spTokenRing.DataContext = Tk;
         }
 
     }
